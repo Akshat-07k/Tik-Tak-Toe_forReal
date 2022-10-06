@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: rgb(100,100,100);
+}
+
+header {
+  position:sticky;
+    display:flex;
+    background-color: rgb(100,100,100);
+    align-items: center;
+    height:110px;
+    position: fixed;
+    left:0;
+    right:0;
+    top:0;
+    justify-content: start;
+  }
+
+ header div{
+    margin-left: 30px;
+    background-color:rgb(200,200,200);
+    padding:3px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-block: auto;
+    font-size: 20px;
+ }
+
+  main{
+    margin-top:110px;
+    display: flex;
+    background-color: gray;
+    opacity: 1;
+    height:800px;
+  }
+  
+  .mainLeft{
+    width: 45vw;
+    
+  }
+ .mainLeftBox{
+    display:grid;
+    flex-wrap: wrap;
+    /* background-color: yellowgreen; */
+    margin-top: 2vw;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+    margin-left:4vw;
+    width: 30vw;
+
+  }
+
+   .box{
+    background-color: rgb(119, 11, 119);    
+    border: 2px black solid;
+    font-size: 3vw;
+    display:flex;
+    align-items: center;
+    justify-content: center;  /* justify is useful in but work only in flex;*/
+  }
+
+   /* .boxText{
+    /* font-size: 100px; */
+    /* font-family: roboto,sans-serif; 
+    
+}
+ */
+
+  .box:hover{
+    background-color: rgb(187, 137, 234);
+    opacity: 0.5  ;
+  }
+
+  .mainRight{
+    width:60vw;
+    /* background-color: burlywood; */
+  }
+
+
+  .bt-0{
+    border-top:0;
+  }.bb-0{
+    border-bottom:0;
+  }.bl-0{
+    border-left:0;
+  }.br-0{
+    border-right:0;
+  }
+
+  .reset{
+    border-radius: 70px;
+    padding:5px;
+    background-color: #3FFF00;
+    /* width: 5vw;
+    height:4vw; */
+    height:6vw;
+    width:6vw;
+    font-size: 25px;
+  }
+
+  .reset:hover{
+    background-color: #66FF00;
+    shape-outside: margin-box;
+  }
